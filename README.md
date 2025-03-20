@@ -130,4 +130,7 @@ docker exec -it postgres psql -U postgres -d kafka_demo -c "SELECT * FROM sensor
 ```
 📷 Скриншоты дашбордов
 
+## Grafana Dashboards
+
+![Grafana Dashboard](screenshots/grafana_dashboard.png)
 
