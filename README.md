@@ -67,8 +67,9 @@ sensor_data
 
 
 📌 Протестировать отправку данных в Kafka:
-
+```
 echo '{"created_at": "2025-03-19T21:00:00Z", "parameter_name": "temperature", "value": 23.5}' | docker exec -i producer python producer.py
+```
 
 📌 Прослушать сообщения из Kafka:
 ```
