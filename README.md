@@ -112,6 +112,12 @@ docker-compose down
 ```
 docker-compose up -d --build
 ```
+
+📌 Посмотреть логи продюсера Kafka:
+```
+docker logs -f producer
+```
+```
 📌 Посмотреть логи потребителя Kafka:
 ```
 docker logs -f consumer
