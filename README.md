@@ -35,13 +35,13 @@ docker ps
 
 Ожидаемый список:
 
-CONTAINER ID   IMAGE                              STATUS          NAMES
-xxxxxxxxxxxx   testovoe_consumer                 Up 2 minutes    consumer
-xxxxxxxxxxxx   testovoe_producer                 Up 2 minutes    producer
-xxxxxxxxxxxx   confluentinc/cp-kafka:latest      Up 2 minutes    kafka
-xxxxxxxxxxxx   confluentinc/cp-zookeeper:latest Up 2 minutes    zookeeper
-xxxxxxxxxxxx   postgres:14                       Up 2 minutes    postgres
-xxxxxxxxxxxx   grafana/grafana:latest            Up 2 minutes    grafana
+IMAGE                           
+testovoe_consumer              
+testovoe_producer                
+confluentinc/cp-kafka:latest      
+confluentinc/cp-zookeeper:latest 
+postgres:14                      
+grafana/grafana:latest        
 
 4️⃣ Проверка Kafka
 
