@@ -117,7 +117,7 @@ docker-compose up -d --build
 ```
 docker logs -f producer
 ```
-```
+
 📌 Посмотреть логи потребителя Kafka:
 ```
 docker logs -f consumer
