@@ -73,7 +73,7 @@ echo '{"created_at": "2025-03-19T21:00:00Z", "parameter_name": "temperature", "v
 
 📌 Прослушать сообщения из Kafka:
 ```
-docker exec -it kafka kafka-console-consumer --bootstrap-server kafka:9092 --topic test_topic --from-beginning
+ docker exec -it kafka kafka-console-consumer --bootstrap-server kafka:9092 --topic sensor_data --from-beginning
 ```
 5️⃣ Проверка PostgreSQL
 
