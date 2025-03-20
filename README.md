@@ -21,6 +21,7 @@ Consumer – читает данные из Kafka и записывает их �
 1️⃣ Клонируйте репозиторий
 
 git clone https://github.com/makstravel/kafka-grafana-monitoring.git
+
 cd kafka-grafana-monitoring
 
 2️⃣ Запустите контейнеры с помощью Docker Compose
