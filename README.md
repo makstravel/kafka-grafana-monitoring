@@ -44,9 +44,9 @@ docker ps
 Ожидаемый список:
 
 IMAGE                           
-testovoe_consumer              
-testovoe_producer                
-confluentinc/cp-kafka:latest      
+kafka-grafana-monitoring_consumer           
+kafka-grafana-monitoring_producer              
+confluentinc/cp-kafka:latest   
 confluentinc/cp-zookeeper:latest 
 postgres:14                      
 grafana/grafana:latest        
@@ -61,8 +61,10 @@ docker exec -it kafka kafka-topics --bootstrap-server kafka:9092 --list
 
 Ожидаемый результат:
 
+
 __consumer_offsets
-test_topic
+sensor_data
+
 
 📌 Протестировать отправку данных в Kafka:
 
