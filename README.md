@@ -1,4 +1,4 @@
-📊 Kafka + PostgreSQL + Grafana Monitoring
+### 📊 Kafka + PostgreSQL + Grafana Monitoring
 
 📝 Описание проекта
 
