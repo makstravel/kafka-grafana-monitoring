@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+*.env
+
+# Docker files
+docker-compose.override.yml
+*.log
+*.pid
+*.sock
+tmp/
+*.swp
+
+# Ignore Python package manager files
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Ignore IDE and editor config files
+.vscode/
+.idea/
+*.iml
+
+# Ignore database files
+*.sqlite
+*.db
+dump.sql
+
+# Ignore Kafka and Zookeeper logs
+kafka-logs/
+zookeeper-logs/
+
+# Ignore Grafana and PostgreSQL data
+grafana-data/
+postgres-data/
+
+# Ignore compiled distributions
+dist/
+build/
+*.egg-info/
