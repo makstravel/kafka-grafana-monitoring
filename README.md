@@ -19,20 +19,27 @@ Consumer – читает данные из Kafka и записывает их �
 🚀 Запуск проекта
 
 1️⃣ Клонируйте репозиторий
-
+```
 git clone https://github.com/makstravel/kafka-grafana-monitoring.git
+```
 
+```
 cd kafka-grafana-monitoring
+```
 
 2️⃣ Запустите контейнеры с помощью Docker Compose
 
+```
 docker-compose up -d --build
+```
 
 3️⃣ Проверка работы сервисов
 
 📌 Проверить запущенные контейнеры:
 
+```
 docker ps
+```
 
 Ожидаемый список:
 
@@ -48,7 +55,9 @@ grafana/grafana:latest
 
 📌 Просмотреть список топиков в Kafka:
 
+```
 docker exec -it kafka kafka-topics --bootstrap-server kafka:9092 --list
+```
 
 Ожидаемый результат:
 
@@ -60,14 +69,15 @@ test_topic
 echo '{"created_at": "2025-03-19T21:00:00Z", "parameter_name": "temperature", "value": 23.5}' | docker exec -i producer python producer.py
 
 📌 Прослушать сообщения из Kafka:
-
+```
 docker exec -it kafka kafka-console-consumer --bootstrap-server kafka:9092 --topic test_topic --from-beginning
-
+```
 5️⃣ Проверка PostgreSQL
 
 📌 Зайти в PostgreSQL и проверить данные:
-
+```
 docker exec -it postgres psql -U postgres -d kafka_demo -c "SELECT * FROM sensor_readings LIMIT 10;"
+```
 
 6️⃣ Настройка Grafana
 
@@ -92,21 +102,21 @@ SSL Mode: disable
 🔧 Полезные команды
 
 📌 Остановить и удалить контейнеры:
-
+```
 docker-compose down
-
+```
 📌 Пересобрать контейнеры и перезапустить:
-
+```
 docker-compose up -d --build
-
+```
 📌 Посмотреть логи потребителя Kafka:
-
+```
 docker logs -f consumer
-
+```
 📌 Проверить содержимое таблицы:
-
+```
 docker exec -it postgres psql -U postgres -d kafka_demo -c "SELECT * FROM sensor_readings;"
-
+```
 📷 Скриншоты дашбордов
 
-(Добавьте сюда скриншоты из Grafana)
+
